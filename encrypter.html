@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styleEncrypter.css">
+<link rel="icon" href="./img/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador | MAHG</title>
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-left">
+            <div class="container-input">
+                <img src="img/mahg_logo.svg" alt="MAHG" height="50" width="50">
+                <img src="./img/alura_logo.svg" alt="Logo de Alura">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <textarea name="text" id="text" cols="30" rows="10" class="input-text" placeholder="Ingrese su texto aquí"></textarea>
+            </div>
+            <div class="container-button">
+                <div class="alert">
+                    <img src="./img/alert.svg" alt="Símbolo de alerta color gris">
+                    <span>Sólo letras minusculas y sin acentos.</span>
+                </div>
+                <div class="buttons">
+                    <button class="button-encrypt" id="submit">Encriptar</button>
+                    <button class="button-unencrypt" id="unencrypt">Desencriptar</button>
+                </div>
+            </div>
+            <div class="container-right" id="container-right">
+                <div class="container-right_result" id="container-right_result">
+                    <img src="./img/muneco.svg" alt="Persona con lupa indicando la búsqueda de algo.">
+                    <div class="message">
+                        <h3>Ningún mensaje encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o Desencriptar</p>
+                    </div>
+                    <div class="message-result" id="message-result">
+                        <p id="parag"></p>
+                        <button class="button-unencrypt" id="clipboard">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scriptEncrypter.js"></script>
+</body>
+</html>
