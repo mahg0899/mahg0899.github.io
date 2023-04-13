@@ -1,4 +1,5 @@
-* *:after,
+* 
+*:after,
 *:before {
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     background: #F3F5FC;
     color: #0A3871;
     font-family: 'Inter';
+    overflow-x: hidden;
 }
 
 .container-main {
@@ -48,6 +50,7 @@ body {
     color: #0a3871;
     margin-top: 50px;
     font-family: Inter;
+    resize: none;
 }
 
 .input-text:focus {
@@ -144,7 +147,7 @@ body {
     justify-content: center;
 }
 
-.message-result {
+.result {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +163,8 @@ body {
     text-align: center;
     padding-bottom: 15px;
     word-break: break-all;
+    font-size: 1.5rem;
+    color: #495057;
 }
 
 .view {
@@ -197,7 +202,7 @@ body {
     .container-left {
         justify-content: space-between;
         height: 100vh;
-        margin-left: 3em;
+        margin-left: 0.03em;
     }
 
     .container-input {
@@ -221,7 +226,7 @@ body {
         background-color: #fff;
         border-radius: 15px;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-        margin-right: 3.5em;
+        margin-right: 5em;
     }
 
     .container-right img {
@@ -229,7 +234,7 @@ body {
     }
 
     .container-button {
-        margin-bottom: 3px;
+        margin-bottom: 3%;
     }
 
     .message {
